@@ -46,3 +46,25 @@ Comandos básicos do Git
 - **`git checkout -- nome_do_arquivo`**: Desfaz alterações em um arquivo, retornando à versão mais recente do commit.
 
 Esses comandos ajudam a gerenciar seu código e colaboração em projetos. Se precisar de mais detalhes sobre algum comando específico, é só avisar!
+
+Os principais comandos para criar uma página web html:
+1. `<!DOCTYPE html>`: Declaração do tipo de documento.
+2. `<html>`: Início do documento HTML.
+3. `<head>`: Contém metadados, como título e links para CSS.
+4. `<title>`: Define o título da página.
+5. `<body>`: Conteúdo visível da página, onde você pode usar elementos como `<h1>`, `<p>`, `<a>`, e `<img>`. 
+
+Para conformação de texto, você pode usar:
+<h1> a <h6>: Cabeçalhos.
+<p>: Parágrafos.
+<strong>: Texto em negrito.
+<em>: Texto em itálico.
+
+Para criar links, use:
+<a href="URL">Texto do Link</a>.
+
+Para imagens, utilize:
+<img src="URL" alt="Descrição">.
+
+E para listas:
+<ul> para listas não ordenadas e <ol> para listas ordenadas, com <li> para itens.
