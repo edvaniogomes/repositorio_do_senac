@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.perfil-img {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.info, .contato {
+    margin: 20px 0;
+}
+
+h2 {
+    border-bottom: 2px solid hsl(276, 100%, 38%);
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+#primeiroBotao{
+    background-color: #9800be;/*Define a cor de fundo do botão*/
+    color: white;/*Define a cor do texto dentro do botão*/
+    padding: 15px 30px;/*Espaçamento interno em 15px e na vertical 30px*/
+    text-align: center;/*Alinhamento do texto para o centro*/
+    font-size: 16px;/*Tamanho da fonte*/
+    border-radius: 20px;/*Arredondamento da borda em12px*/
+    cursor: pointer;/*Mudança do cursor para mãozinha*/
+    transition: background-color 0.3s ease;/*Adiciona uma transição suave*/
+    display: block;/*Faz o botão se comportar como um bloco*/
+    margin: auto;/*Centraliza o botão horizontalmente*/
+}
+
+/*Estilização ao passar ao passar o mouse sobre o botão*/
+#primeiroBotao:hover{
+    background-color: #bb0057;/*Muda a cor de fundo ao passar o mouse em cima*/
+    
+}

@@ -1,0 +1,17 @@
+#primeiroBotao{
+    background-color: chartreuse;/*Define a cor de fundo do botão*/
+    color: white;/*Define a cor do texto dentro do botão*/
+    padding: 15px 30px;/*Espaçamento interno em 15px e na vertical 30px*/
+    text-align: center;/*Alinhamento do texto para o centro*/
+    font-size: 16px;/*Tamanho da fonte*/
+    border: 12px;/*Arredondamento da borda em12px*/
+    cursor: pointer;/*Mudança do cursor para mãozinha*/
+    transition: background-color 0.3s ease;/*Adiciona uma transição suave*/
+    display: block;/*Faz o botão se comportar como um bloco*/
+    margin: auto;/*Centraliza o botão horizontalmente*/
+}
+
+/*Estilização ao passar ao passar o mouse sobre o botão*/
+#primeiroBotao:hover{
+    background-color: brown;/*Muda a cor de fundo ao passar o mouse em cima*/
+}
