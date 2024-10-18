@@ -1,88 +1,117 @@
+/**/
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+     display: flex;
+     justify-content: center;
+     gap: 50px;
+     background-color: white;
+     padding: 40px;
+     border-radius: 10px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     align-items: center;
+    height: calc(100vh - 60px);
+    padding: 20px;
+     
+     
 }
 
 body {
-    background: #fff;
-    color: #1c1e21;
-    direction: ltr;
-    line-height: 1.34;
-    margin: 0;
-    padding: 0;
-    unicode-bidi: embed;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 20px;
+    
+}
+
+.esquerdo,img {
+    text-align: left;
+    width: 200px;
+    border: 30px;
+    margin-bottom: 20px;
+}
+
+.direito {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-box a {
+    display: block;
+    margin-top: 10px;
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.login-box hr {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #1877f2;
+}
+
+button:hover {
+    background-color: #166fe5;
+}
+
+.new-account {
+    background-color: #42b72a;
+    margin-top: 10px;
+}
+
+.new-account:hover {
+    background-color: #36a420;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1877f2;
 }
 
 p {
     font-size: 20px;
 }
 
-main {
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-img {
-    width: 30%;
-}
-
-a {
-    color: #007BFF;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #0056b3;
-}
-
-button#entrar {
-    background-color: hsl(229, 100%, 50%);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button#entrar:hover {
-    background-color: #00027e;
-}
-
-button#conta {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button#conta:hover {
-    background-color: #005a14;
-}
-
-input[type="text"], input[type="email"], textarea, select {
-    width: 100%;
-    padding: 20px;
-    margin-top: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-}
-
-footer {
-    background-color: hwb(0 100% 0%);
+.rodape {
+    background-color: #ffffff;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px 0;
     position: relative;
+    
+    
 }
 

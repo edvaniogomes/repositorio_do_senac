@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Recrutamento - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Recrutamento</h1>
+            <form class="login-form" action="#" method="POST">
+                <input type="email" placeholder="E-mail" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-content">
+            <div class="intro">
+                <h2>Encontre as melhores vagas</h2>
+                <p>Cadastre-se para descobrir oportunidades de emprego de acordo com suas habilidades e preferências.</p>
+            </div>
+            <div class="signup-form">
+                <h2>Cadastre-se</h2>
+                <form action="#" method="POST">
+                    <input type="text" placeholder="Nome completo" required>
+                    <input type="email" placeholder="E-mail" required>
+                    <input type="password" placeholder="Senha" required>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Recrutamento. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+header {
+    background-color: #4267b2;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container h1 {
+    font-size: 2rem;
+}
+
+.login-form {
+    display: flex;
+    gap: 10px;
+}
+
+.login-form input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login-form button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1877f2;
+    color: white;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #165cbb;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    padding: 20px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    color: #4267b2;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.signup-form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.signup-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #42b72a;
+    color: white;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: #369e23;
+}
+
+footer {
+    background-color: #f0f2f5;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
