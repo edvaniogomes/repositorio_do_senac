@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial_scale=1.0">
-    <link rel="stylesheet" href="respostas12345678.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='respostas12345678.css') }}">
     <title>Minhas Primeiras Respostas</title>
 </head>
 <body>
     <h1>Site de Respostas</h1>
     <p>Este foi construído para demonstrar as respostas dos exercícios<strong></p>
-    <img src="C:\Users\Senac\Pictures\Wallpaper1920x1080.png" alt="Imagem Representativa">
+    <img src="{{ url_for('static', filename='images/marvel.jpg') }}" alt="Imagem Representativa">
     <ul>
         <li>Site de exemplo</li>
         <li>Treinamento de comandos</li>
@@ -41,7 +41,7 @@
     </table>
     <button onclick="">Página de Contato</button>
     <h1>Formulário</h1>
-    <form action="#" method="POST">
+    <form action="/contato" method="POST">
         <label for="nome">Nome: </label>
         <input type="text" id="nome" name="nome" required><br><br>
         
@@ -50,6 +50,16 @@
 
         <label for="mensagem">Mensagem: </label>
         <textarea id="mensagem" name="mensagem" rows="5" cols="40" required></textarea>
+        <br><br>
+
+        <label for="tema">Selecione um tema:</label>
+        <select id="tema" name="tema">
+            <option value="tecnologia">Tecnologia</option>
+            <option value="educacao">Educação</option>
+            <option value="saude">Saúde</option>
+        </select>
+        <br><br>
+        <button type="submit">Enviar</button>
     </form>
 
     <h1>Escolha um tema</h1>

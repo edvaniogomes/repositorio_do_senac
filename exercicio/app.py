@@ -17,7 +17,8 @@ def criar_tabela():
     # Criar a tabela 'contatos' com as colunas necessárias
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS contatos(
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        id INTEG
+        ER PRIMARY KEY AUTOINCREMENT,
         nome TEXT NOT NULL,
         email TEXT NOT NULL,
         mensagem TEXT NOT NULL,
