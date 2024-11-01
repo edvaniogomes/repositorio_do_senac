@@ -9,7 +9,8 @@ p{
 }
 
 img{
-    border: 10px solid #4CAF50;
+    width: 0px;
+    border: 50px solid #4CAF50;
     border-radius: 25px; /* Arredonda muito as extremidades da imagem */
 }
 

@@ -3,57 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Responsivo e Interativo</title>
+    <title>Exemplo de Página de Vagas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Início do HEADER -->
     <header>
-        <h1>Bem-vindo ao Meu Site Responsivo</h1>
-        <button id="menu-btn">&#9776;</button>
+        <div class="logo_header">
+            <img src="C:\Users\Senac\Downloads\Edvânio\git\repositorio_do_senac\projeto_integrador\img\empregamais.png" alt="Logo da Empresa">
+        </div>
+        <h1>Título do Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="vagas">Vagas</a></li>
+                <li><a href="#" class="sobre_nos">Sobre Nós</a></li>
+            </ul>
+        </nav>
+        <div class="botoes_header">
+            <button class="login">Login</button>
+            <button class="cadastre_se">Cadastre-se</button>
+        </div>
     </header>
+    <!-- Fim do HEADER -->
 
-    <nav id="nav-menu">
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#contato">Contato</a>
-    </nav>
-
-    <div class="container">
-        <section id="inicio">
-            <h2>Seção Principal</h2>
-            <p>Este é um exemplo de um site interativo com HTML5, CSS e JavaScript. À medida que a tela diminui de tamanho, os elementos se ajustam, e adicionamos interatividade com o menu móvel e animações.</p>
-        </section>
-
-        <section id="sobre">
-            <h2>Sobre</h2>
-            <p>Este site demonstra como criar um layout responsivo e adicionar funcionalidade interativa usando JavaScript.</p>
-        </section>
-
-        <section id="servicos">
-            <h2>Nossos Serviços</h2>
-            <div class="grid">
-                <div>
-                    <h3>Serviço 1</h3>
-                    <p>Descrição do serviço 1. Explicamos o que oferecemos aqui.</p>
-                </div>
-                <div>
-                    <h3>Serviço 2</h3>
-                    <p>Descrição do serviço 2. Explicamos o que oferecemos aqui.</p>
-                </div>
-                <div>
-                    <h3>Serviço 3</h3>
-                    <p>Descrição do serviço 3. Explicamos o que oferecemos aqui.</p>
+    <!-- Início do BANNER -->
+    <section class="banner">
+        <div class="container_banner">
+            <div class="icon_banner">
+                <img src="C:\Users\Senac\Downloads\Edvânio\git\repositorio_do_senac\projeto_integrador\img\banner_img.png" alt="Imagem do Banner">
+                <div class="texto_banner">
+                    <h1>Bem-vindo ao nosso site</h1>
+                    <h2>Encontre sua vaga ideal</h2>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+    <!-- Fim do BANNER -->
 
-    <footer id="contato">
-        <p>&copy; 2024 Meu Site Responsivo. Todos os direitos reservados.</p>
+    <!-- Início do MAIN -->
+    <main>
+        <div class="container_main">
+
+            <!-- Início Caixa de Pesquisa -->
+            <div class="container_buscar">
+                <div class="campo_buscar">
+                    <label for="vaga">Buscar Vaga</label>
+                    <div class="caixa_buscar">
+                        <i class="icon_search"></i>
+                        <input type="text" id="vaga" class="input_vaga" placeholder="Digite a vaga">
+                    </div>
+                </div>
+
+                <div class="campo_empresa">
+                    <label for="empresa">Empresa</label>
+                    <div class="caixa_empresa">
+                        <i class="icon_search"></i>
+                        <input type="text" id="empresa" class="input_empresa" placeholder="Digite a empresa">
+                    </div>
+                </div>
+
+                <div class="botao_buscar_vagas">
+                    <button>Buscar Vagas</button>
+                </div>
+            </div>
+            <!-- Fim Caixa de Pesquisa -->
+
+            <!-- Início Caixa de Vagas -->
+            <div class="container_vagas">
+                <h1>Vagas Disponíveis</h1>
+                <div class="white-box">
+                    <div class="nome_empresa">
+                        <input type="text" value="Nome da Vaga" readonly>
+                        <input type="text" value="Nome da Empresa" readonly>
+                    </div>
+                    <div class="l_qv_d">
+                        <div class="localidade">
+                            <i class="icon_location"></i>
+                            <input type="text" value="Localidade" readonly>
+                        </div>
+                        <div class="quantidade_vagas">
+                            <i class="icon_vagas"></i>
+                            <input type="text" value="10 Vagas" readonly>
+                        </div>
+                    </div>
+                    <div class="t_e_ch">
+                        <div class="tipo">
+                            <i class="icon_tipo"></i>
+                            <input type="text" value="Tipo de Contrato" readonly>
+                        </div>
+                        <div class="carga_horaria">
+                            <i class="icon_horario"></i>
+                            <input type="text" value="Carga Horária" readonly>
+                        </div>
+                    </div>
+                    <div class="descricao_vaga">
+                        <textarea readonly>Descrição da vaga...</textarea>
+                    </div>
+                    <div class="botao_candidatar">
+                        <button>Candidatar-se</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Caixa de Vagas -->
+        </div>
+    </main>
+    <!-- Fim do MAIN -->
+
+    <!-- Início do FOOTER -->
+    <footer>
+        <div class="container_footer">
+            <div class="logo_footer">
+                <img src="logo_footer.png" alt="Logo do Rodapé">
+            </div>
+            <ul class="lista_footer">
+                <li><a href="#" class="footer_link">Ajuda</a></li>
+                <li><a href="#" class="footer_link">Contato</a></li>
+                <li><a href="#" class="footer_link">Política de Privacidade</a></li>
+            </ul>
+            <div class="social_media_footer">
+                <a href="#" class="footer_link" id="facebook"><i class="icon_facebook"></i></a>
+                <a href="#" class="footer_link" id="instagram"><i class="icon_instagram"></i></a>
+            </div>
+        </div>
+        <div class="copyright_footer">
+            <p>&copy; 2023 - Todos os direitos reservados.</p>
+        </div>
     </footer>
+    <!-- Fim do FOOTER -->
 
-    <script src="script.js"></script>
 </body>
 </html>

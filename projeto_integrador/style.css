@@ -1,122 +1,132 @@
-/* Estilo básico */
+/* Reset Básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
 }
 
+/* Estilo para BODY */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    position: relative;
+/* HEADER */
+header { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    max-width: 1100px;
+    width: 100%; 
+    background-color: #ffffff;
+    margin: 0 auto; 
 }
 
-nav {
-    background: #444;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    display: none;
+header h1 {
+    font-size: 40px;
 }
 
-nav a {
-    color: #fff;
-    padding: 10px;
+.logo_header img {
+    width: 250px;
+    height: 180px;
+}
+
+header nav {
+    display: flex;
+    width: 30%;
+}
+
+header a {
+    color: #003079;
     text-decoration: none;
-    display: inline-block;
+    font-size: 22px;
 }
 
-nav a:hover {
-    background-color: #555;
+/* Botões do Header */
+.botoes_header {
+    display: flex;
 }
 
-/* Botão de menu para dispositivos móveis */
-#menu-btn {
-    display: none;
-    font-size: 30px;
-    color: #fff;
-    background: none;
-    border: none;
-    position: absolute;
-    top: 15px;
-    right: 15px;
+.botoes_header .login,
+.botoes_header .cadastre_se {
+    font-size: 20px;
+    border-radius: 8.89px;
     cursor: pointer;
 }
 
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-
-section {
-    margin: 20px 0;
-}
-
-section h2 {
-    margin-bottom: 10px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.grid div {
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.5s ease-out;
-}
-
-footer {
-    background: #333;
+.botoes_header .login {
+    background-color: #003079;
     color: #fff;
+    border: none;
+}
+
+.botoes_header .login:hover {
+    background-color: #0056b3;
+    color: #FFE500;
+}
+
+.botoes_header .cadastre_se {
+    background-color: #ffffff;
+    color: #003079;
+    border: 3px solid #003079;
+    max-height: 40px;
+}
+
+/* BANNER */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    background-color: #003079;
+}
+
+.icon_banner img {
+    display: block;
+    height: 180px;
+    width: 1100px;
+}
+
+.texto_banner {
+    position: absolute;
+    top: 53%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    color: white;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
+}
+
+.texto_banner h1 {
+    font-size: 44px;
+    margin-bottom: -15px;
+}
+
+.texto_banner h2 {
+    font-size: 90px;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
     width: 100%;
 }
 
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    nav {
-        text-align: left;
-        padding-left: 20px;
-    }
-
-    #menu-btn {
-        display: block;
-    }
+.container_main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    max-width: 1100px;
+    background-color: #eee;
 }
 
-@media (max-width: 480px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    nav {
-        text-align: center;
-    }
-
-    header h1 {
-        font-size: 1.8rem;
-    }
-}
+/* Caixa de Pesquisa */
+.container_buscar {
