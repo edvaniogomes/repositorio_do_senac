@@ -24,10 +24,7 @@ header {
     width: 100%; 
     background-color: #ffffff;
     margin: 0 auto; 
-}
-
-header h1 {
-    font-size: 40px;
+    
 }
 
 .logo_header img {
@@ -56,17 +53,20 @@ header a {
     font-size: 20px;
     border-radius: 8.89px;
     cursor: pointer;
+    margin: 20PX;
 }
 
 .botoes_header .login {
     background-color: #003079;
     color: #fff;
     border: none;
+    margin: 10px;
 }
 
 .botoes_header .login:hover {
     background-color: #0056b3;
     color: #FFE500;
+    
 }
 
 .botoes_header .cadastre_se {
@@ -74,6 +74,7 @@ header a {
     color: #003079;
     border: 3px solid #003079;
     max-height: 40px;
+    margin: 10px;
 }
 
 /* BANNER */
@@ -128,5 +129,14 @@ main {
     background-color: #eee;
 }
 
-/* Caixa de Pesquisa */
-.container_buscar {
+.container_footer {
+    
+    background-color: #003079;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    
+    
+    
+}
