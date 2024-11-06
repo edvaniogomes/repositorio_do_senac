@@ -1,3 +1,4 @@
+/* Reset Básico */
 * {
     margin: 0;
     padding: 0;
@@ -6,14 +7,14 @@
     font-weight: 700;
 }
 
+/* Estilo para BODY */
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
 }
+
+/* HEADER */
 header { 
     display: flex;
     justify-content: space-around;
@@ -31,8 +32,26 @@ header {
     height: 180px;
 }
 
+header nav {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    margin: 50px;
+}
+
+header a {
+    color: #003079;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+/* Botões do Header */
 .botoes_header {
     display: flex;
+}
+
+.botoes_header .login,
+.botoes_header .cadastre_se {
     font-size: 20px;
     border-radius: 8.89px;
     cursor: pointer;
@@ -52,25 +71,13 @@ header {
     
 }
 
-.botoes_header .cadastro {
+.botoes_header .cadastre_se {
     background-color: #ffffff;
     color: #003079;
     border: 3px solid #003079;
     max-height: 40px;
     margin: 10px;
 }
-
-.botoes_header .cadastro:hover {
-    background-color: #0056b3;
-    color: #FFE500;
-    
-}
-
-.icon_banner img {
-    display: block;
-    height: 180px;
-    width: 1100px;
-}   
 
 /* BANNER */
 .banner {
@@ -81,44 +88,31 @@ header {
     background-color: #003079;
 }
 
-.menu ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    margin: 10px;
-    padding: 10px;
+.icon_banner img {
+    display: block;
+    height: 180px;
+    width: 1100px;
 }
 
-.menu_inferior {
-    text-decoration: none;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 22px;
+.texto_banner {
+    position: absolute;
+    top: 53%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1em;
+.texto_banner h1 {
+    font-size: 44px;
+    margin-bottom: -15px;
 }
 
-nav ul li a {
-    
-    
+.texto_banner h2 {
+    font-size: 90px;
 }
 
-a {
-    color: #003079;
-    text-decoration: none;
-    font-size: 22px;
-}
-
-main {
-    padding: 2em;
-}
-
+/* MAIN */
 main {
     flex: 1;
     display: flex;
@@ -126,15 +120,23 @@ main {
     align-items: center;
     background-color: #eee;
     width: 100%;
-    text-align: center;
 }
 
+.container_main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    max-width: 1100px;
+    background-color: #eee;
+}
 
-footer {
+.container_footer {
     background-color: #003079;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 10px;
     width: 100%;
-    height: 100px;
+    height: 80px;
+ 
 }
