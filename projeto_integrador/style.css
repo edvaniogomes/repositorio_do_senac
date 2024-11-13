@@ -14,6 +14,7 @@ body {
     line-height: 1.6;
     background-color: #f9f9f9;
 }
+
 header { 
     display: flex;
     justify-content: space-around;
@@ -21,7 +22,6 @@ header {
     height: 100px;
     max-width: 1100px;
     width: 100%; 
-    background-color: #ffffff;
     margin: 0 auto; 
     
 }
@@ -31,36 +31,41 @@ header {
     height: 180px;
 }
 
-.botoes_header {
+.botoes_header button {
+    text-align: center;
+    width: 200px;
     display: flex;
-    font-size: 20px;
+    font-size: 16px;
     border-radius: 8.89px;
     cursor: pointer;
-    margin: 20PX;
+    margin: 10px;
+    padding: 5px;
 }
 
-.botoes_header .login {
+.botoes_header .login button{
+    text-align: center;
     background-color: #003079;
     color: #fff;
     border: none;
     margin: 10px;
 }
 
-.botoes_header .login:hover {
-    background-color: #0056b3;
-    color: #FFE500;
-    
-}
+.botoes_header .login:hover button{
+        background-color: #0056b3;
+        color: #FFE500;
+        
+    }
 
-.botoes_header .cadastro {
-    background-color: #ffffff;
-    color: #003079;
-    border: 3px solid #003079;
-    max-height: 40px;
-    margin: 10px;
-}
+.botoes_header .cadastro button{
+        background-color: #ffffff;
+        color: #003079;
+        border: 3px solid #003079;
+        max-height: 40px;
+        margin: 10px;
+    }
 
-.botoes_header .cadastro:hover {
+.botoes_header .cadastro:hover button{
+        
     background-color: #0056b3;
     color: #FFE500;
     
@@ -94,7 +99,7 @@ header {
     text-decoration: none;
     color: #ffffff;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 nav ul {
@@ -112,7 +117,7 @@ nav ul li a {
 a {
     color: #003079;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 main {
